@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>4 PICS 1 WORD</title>
+    <link rel = 'stylesheet' type = 'text/css' href = './assets/css/style.css'/>
+    <link rel= 'html' href='./css/all.min.css'>
+    <link rel = 'stylesheet' type = 'text/css' href = './assets/css/media-query.css' />
+    <link href='https://fonts.googleapis.com/css2?family=Charmonman' rel='stylesheet'>
+</head>
+<body>
+    <main>
+        <div id= 'container'>
+            <div class = 'front'>
+                <div class= 'box-container'>
+                    <div class= 'box'>
+                        <img src = './assets/images/front/photo1.jpg' alt = 'photo1'/>
+                    </div>
+                    <div class= 'box'>
+                        <img src = './assets/images/front/photo2.jpg' alt = 'photo2'/>
+                    </div>
+                    <div class= 'box'>
+                        <img src = './assets/images/front/photo3.jpg' alt = 'photo3'/>
+                    </div>
+                    <div class= 'box'>
+                        <img src = './assets/images/front/photo4.jpg' alt = 'photo4'/>
+                    </div>
+                    <div class= 'word'><p>1 WORD</p></div>
+                </div>
+
+                <div id = 'buttonClass'>
+                    <button id= 'playButton' class= 'button' onclick='newgame()' >PLAY</button>
+                    <button id ='instructionsButton' class= 'button'>INSTRUCTIONS</button>
+                    <button id = 'exitButton' class= 'button'>EXIT</button>
+                </div>
+            </div>
+
+            <div id='modal'>
+                <div id='modal-content'>
+                <span id='close'>&times;</span>
+                <p>The gameplay of 4 Pics 1 Word is simple: Each level features four photographs linked by a single word, and the player's task is to figure out the word from a set of letters provided below the pictures. You have three chances before the current level ends. Have fun!
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div id= 'levelContainer' style='display:none' class = level-container>
+            <div id= 'topBar' class= 'top-bar'>
+                <button id= 'backButton' onclick='returnback()'>BACK</button>
+
+                <div id='lifebar'>           
+                    <img src= 'assets/images/lifebar.png' style='width:30px; height:30px; ' id='hbar1'> &nbsp
+                    <img src= 'assets/images/lifebar.png' style='width:30px; height:30px; ' id='hbar2'> &nbsp
+                    <img src= 'assets/images/lifebar.png' style='width:30px; height:30px; ' id='hbar3'> 
+                </div>
+
+            </div>
+
+            <div class= 'level1'>
+                <img id='level1-img1' src= 'assets/images/level1/image1.jpg'/>
+                <img id='level1-img2' src= 'assets/images/level1/image2.jpg'/>
+                <img id='level1-img3' src= 'assets/images/level1/image3.jpg'/>
+                <img id='level1-img4' src= 'assets/images/level1/image4.jpg'/>
+            </div>
+
+            <div id= 'answerspace'>
+
+            </div>
+
+
+            <div id= 'choicespace'>
+
+            </div>
+        </div>
+
+    </main>
+    <script src = 'script.js'></script>
+
+</body>
+</html>
+

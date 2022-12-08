@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(215, 250, 221);
+    text-align: center;
+}
+
+#buttonClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: rgb(185, 168, 168);
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#playButton{
+    font-size: 35px;
+}
+
+.box-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, 220px);
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.box img {
+    width: 230px;
+    height: 210px;
+    border-radius: 4%;
+}
+
+#levelContainer {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    background-color: antiquewhite;
+}
+
+.level1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, 220px);
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.level1 img {
+    width: 230px;
+    height: 210px;
+    border-radius: 4%;
+}
+
+#answerspace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#close {
+   color: #aaaaaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+#close:hover,
+  
+#close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+#lifebar {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+
+#backButton {
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#topBar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.word {
+    font-size: 100px;
+    font-style: italic;
+    font-family: cursive;
+    color: lightsalmon;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+}

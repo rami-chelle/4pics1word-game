@@ -1,0 +1,100 @@
+@media only screen and (max-width: 1024px) {
+    .box-container {
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: repeat(2, 280px);
+    }
+    
+    .box img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .button {
+        width: 300px;
+        height: 50px;
+        font-size: 30px;
+        margin: 2px;
+    }
+    
+    #playButton{
+        font-size: 50px;
+        width: 300px;
+        height: 70px;
+    }
+
+    #buttonClass {
+        margin-top: 0;
+    }
+    
+    .level1 {
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: repeat(2, 240px);
+    }
+
+    .level1 img {
+        width: 270px;
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .word {
+        font-size: 80px;
+    }
+   
+    .button {
+        width: 200px;
+        height: 40px;
+        font-size: 15px;
+        margin: 2px;
+    }
+    
+    #playButton{
+        font-size: 28px;
+        width: 200px;
+        height: 40px;
+    }
+
+    #buttonClass {
+        margin-top: -3px;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(2, 210px);
+        grid-template-rows: repeat(2, 210px);
+    }
+    
+    .box img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .level1 {
+        grid-template-columns: repeat(2, 160px);
+        grid-template-rows: repeat(2, 160px);
+    }
+
+    .level1 img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #backButton {
+        font-size: 14px;
+        padding: 2px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #answerspace, #choicespace {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+
+    #choicespace {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
